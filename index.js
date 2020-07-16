@@ -10,7 +10,7 @@ app.use(async (ctx, next) => {
 });
 
 app.use(async (ctx) => {
-    ctx.body = 'Hello Koa';
+    ctx.body = 'Hello Koa this is a new project';
 });
 
 app.listen(process.env.port || 3000, () => {
