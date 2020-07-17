@@ -9,4 +9,6 @@ COPY src src/
 ENV NPM_CONFIG_LOGLEVEL warn
 RUN npm install
 
+EXPOSE 3000 8080
+
 CMD [ "pm2-runtime", "start", "ecosystem.config.js" ]

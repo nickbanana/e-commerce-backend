@@ -2,7 +2,10 @@ module.exports = {
   apps : [{
     name: 'e-commerce-backend',
     script: './src/index.js',
-    watch: './src'
+    watch: './src',
+    env: {
+      "PORT": 3000
+    }
   }],
 
   /*deploy : {
