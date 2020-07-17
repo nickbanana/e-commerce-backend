@@ -11,4 +11,4 @@ RUN npm install
 
 EXPOSE 3000 8080
 
-CMD [ "pm2-runtime", "start", "ecosystem.config.js", "--web", "3000"]
+CMD [ "pm2-runtime", "start", "ecosystem.config.js"]
