@@ -6,4 +6,7 @@ COPY package*.json ./
 COPY ecosystem.config.js ./
 COPY src src/
 
+ENV NPM_CONFIG_LOGLEVEL warn
+RUN npm install
+
 CMD [ "pm2-runtime", "start", "ecosystem.config.js" ]
